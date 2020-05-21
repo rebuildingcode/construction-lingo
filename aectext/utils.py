@@ -26,3 +26,15 @@ def get_pos(s):
         pos.append(token.pos_)
 
     return pos
+
+
+def get_entities(s):
+    """Return entities from a string"""
+    nlp = get_spacy_model()
+    doc = nlp(s)
+
+    entities = []
+    for ent in doc.ents:
+        entities.append((ent.text, ent.label_))
+
+    return entities

@@ -5,5 +5,5 @@
 From `library/`, run
 
 ```bash
-pytest --cov=library --cov-report term-missing --log-level=20 -vv
+pytest --cov=aectext --cov-report term-missing --log-level=20 -vv
 ```

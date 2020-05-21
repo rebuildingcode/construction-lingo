@@ -13,7 +13,7 @@ def test_get_pos():
 
 
 def test_get_invalid_nlp_model():
-    with mock.patch('library.utils.log.info') as mock_log:
+    with mock.patch('construction_lingo.utils.log.info') as mock_log:
         nlp = get_spacy_model('any_model')
 
     mock_log.assert_called_with(
